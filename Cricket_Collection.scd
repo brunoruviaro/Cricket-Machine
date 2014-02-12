@@ -158,6 +158,7 @@
 );
 
 "End of Cricket Collection file".postln;
+".";
 
 // Most Pbinds play only ONE chirp then stop.
 // Terminating condition is inside Pwhite controlling amp.

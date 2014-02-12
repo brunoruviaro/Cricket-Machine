@@ -3,16 +3,15 @@
 ////////////////////////
 
 // Choose crickets
-~myCrickets = (11..16);
+~myCrickets = (1..13);
 
 // Load SynthDefs
-"/home/ruviaro/Music/SuperCollider/Cricket_Machine/Cricket_SynthDef.scd".load;
+"/home/ruviaro/Music/SuperCollider/Cricket-Machine/Cricket_SynthDef.scd".load;
 
 // Load Crickets
-"/home/ruviaro/Music/SuperCollider/Cricket_Machine/Cricket_Collection.scd".load;
+"/home/ruviaro/Music/SuperCollider/Cricket-Machine/Cricket_Collection.scd".load;
 
 // Start GUI
-"/home/ruviaro/Music/SuperCollider/Cricket_Machine/Crickets_GUI.scd".load
-
+"/home/ruviaro/Music/SuperCollider/Cricket-Machine/Crickets_GUI.scd".load
 
 // Window.closeAll;

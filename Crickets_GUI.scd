@@ -54,5 +54,43 @@ Window.closeAll;
 
 ~makeWindow.value;
 
+// Function that creates GUI for next section of piece (scratch, transpose)
+~nextSection = {
+	var window, bufferNumFrames, scratch, slider, rate;
+	window = Window.new("Cricket Control", 600@100, resizable: false).front;
+	bufferNumFrames = 44100 * 40; // 40-sec buffer
+
+	scratch = Button(window, Rect(5, 5, 90, 50))
+	.states_([
+		["scratch", Color.black, Color.white],
+		["scratch", Color.black, Color.red]
+	])
+	.action_({ arg button;
+		if(button.value==1,
+			{~bufferRead.set(\which, 1); slider.knobColor = Color.red},
+			{~bufferRead.set(\which, 0); slider.knobColor = Color.white});
+	});
+
+	slider = Slider(parent: window, bounds: Rect(100, 5, 495, 50))
+	.action_({ ~bufferRead.set(\which, 1, \sliderScratch, slider.value.linlin(0, 1, 0, bufferNumFrames)) });
+
+	rate = Button(window, Rect(345, 65, 250, 25))
+	.states_([
+		["click to transpose one octave below", Color.black, Color.white],
+		["click to go back to original", Color.white, Color.gray]
+	])
+	.action_({ arg button;
+		if(button.value==1,
+			{ ~bufferRead.set(\rate, 1/2) },
+			{ ~bufferRead.set(\rate, 1) });
+	});
+};
+
+~nextSection.value;
+
+// AppClock.sched(5, {~nextSection.value});
+
 "End of Cricket GUI file".postln;
+".";
 "GO!".postln;
+" ";
