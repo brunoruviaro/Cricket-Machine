@@ -3,15 +3,17 @@
 ////////////////////////
 
 // Choose crickets
-~myCrickets = (1..13);
+~myCrickets = (1..16);
 
 // Load SynthDefs
-"/home/ruviaro/Music/SuperCollider/Cricket-Machine/Cricket_SynthDef.scd".load;
+"/home/lork/Music/SuperCollider/Cricket-Machine/Cricket_SynthDef.scd".load;
 
 // Load Crickets
-"/home/ruviaro/Music/SuperCollider/Cricket-Machine/Cricket_Collection.scd".load;
+"/home/lork/Music/SuperCollider/Cricket-Machine/Cricket_Collection.scd".load;
 
 // Start GUI
-"/home/ruviaro/Music/SuperCollider/Cricket-Machine/Crickets_GUI.scd".load
+"/home/lork/Music/SuperCollider/Cricket-Machine/Crickets_GUI.scd".load
 
-// Window.closeAll;
+
+// Use this to close all windows:
+Window.closeAll;
