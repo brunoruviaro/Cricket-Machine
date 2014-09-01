@@ -4,10 +4,9 @@ Cricket-Machine
 Easy piece for laptop orchestra.
 Originally composed for SCLOrk, the Santa Clara Laptop Orchestra.
 
-## How to play
+### How to play
 
-Open Player file. Adjust paths accordingly to load other files.
-Evaluate all lines one by one. Two GUI elements will appear on screen:
+Open Player file in SuperCollider. Adjust paths accordingly to load other files. Evaluate all lines one by one. Two windows will appear on screen:
 
 1. A little red window called "Cricket"
 
@@ -21,7 +20,7 @@ The scratched section ends on a cue (given by a conductor or one of the players)
 
 From that point on, no more scratching (or only very occasionally), and clicking on new crickets is optional. Players slowly fade out to make crickets disappear to end the piece.
 
-## Variations are encouraged!
+### Variations are encouraged!
 
 This is just a guideline for improvisation. The piece can be changed or adapted in a number of ways:
 
@@ -31,9 +30,9 @@ This is just a guideline for improvisation. The piece can be changed or adapted 
 
 * The ensemble may choose a specific order to introduce each new cricket sound over time.
 
-* Ensembles are encourage to try other variation of the guided improvisation suggested above.
+* Ensembles are encouraged to try other variations of the guided improvisation suggested above.
 
-## Improvements for the future
+### Improvements for the future
 
 The first version of this piece used SooperLooper for the looping and scratching. Some more work needs to be done to improve the scratching mechanism.
 
