@@ -6,13 +6,13 @@
 ~myCrickets = (1..16);
 
 // Load SynthDefs
-"/home/lork/Music/SuperCollider/Cricket-Machine/Cricket_SynthDef.scd".load;
+"Cricket-Machine/Cricket_SynthDef.scd".loadRelative;
 
 // Load Crickets
-"/home/lork/Music/SuperCollider/Cricket-Machine/Cricket_Collection.scd".load;
+"Cricket-Machine/Cricket_Collection.scd".loadRelative;
 
 // Start GUI
-"/home/lork/Music/SuperCollider/Cricket-Machine/Crickets_GUI.scd".load
+"Cricket-Machine/Crickets_GUI.scd".loadRelative;
 
 
 // Use this to close all windows:
