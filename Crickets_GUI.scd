@@ -39,7 +39,7 @@ Window.closeAll;
 			height: height),
 		resizable: false,
 		border: true
-	).front;
+	).front.alwaysOnTop_(true);
 	// Create button;
 	b = Button.new(w, Rect(0,0,width,height));
 	b.states = [["Click It!", Color.white, Color.red(0.7, 0.9)]];
@@ -57,7 +57,7 @@ Window.closeAll;
 // Function that creates GUI for next section of piece (scratch, transpose)
 ~nextSection = {
 	var window, bufferNumFrames, scratch, slider, rate;
-	window = Window.new("Cricket Control", 600@100, resizable: false).front;
+	window = Window.new("Cricket Control", 600@100, resizable: false).front.alwaysOnTop_(true);
 	bufferNumFrames = 44100 * 40; // 40-sec buffer
 
 	scratch = Button(window, Rect(5, 5, 90, 50))
